@@ -18,11 +18,11 @@ export default function EditUserForm(props) {
   const { user, setShowModal } = props;
   const [formData, setFormData] = useState(initialValue(user));
   const [bannerUrl, setBannerUrl] = useState(
-    user?.banner ? `${API_HOST}/obtenerbanner?id=${user.id}` : null
+    user?.banner ? `${API_HOST}/obtenerBanner?id=${user.id}` : null
   );
   const [bannerFile, setBannerFile] = useState(null);
   const [avatarUrl, setAvatarUrl] = useState(
-    user?.avatar ? `${API_HOST}/obteneravatar?id=${user.id}` : null
+    user?.avatar ? `${API_HOST}/obtenerAvatar?id=${user.id}` : null
   );
   const [avatarFile, setAvatarFile] = useState(null);
   const [loading, setLoading] = useState(false);

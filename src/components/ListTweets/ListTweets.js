@@ -31,7 +31,7 @@ function Tweet(props) {
       setUserInfo(response);
       setAvatarUrl(
         response?.avatar
-          ? `${API_HOST}/obteneravatar?id=${response.id}`
+          ? `${API_HOST}/obtenerAvatar?id=${response.id}`
           : AvatarNoFound
       );
     });

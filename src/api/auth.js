@@ -23,11 +23,9 @@ export function signUpApi(user) {
       if (response.status >= 200 && response.status < 300) {
         return response.json();
       }
-      console.log(response.url);
       return { code: 404, message: "Email no disponible" };
     })
     .then(result => {
-      console.log(result);
       return result;
     })
     .catch(err => {

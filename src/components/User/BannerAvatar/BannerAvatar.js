@@ -18,10 +18,10 @@ export default function BannerAvatar(props) {
   const [following, setFollowing] = useState(null);
   const [reloadFollow, setReloadFollow] = useState(false);
   const bannerUrl = user?.banner
-    ? `${API_HOST}/obtenerbanner?id=${user.id}`
+    ? `${API_HOST}/obtenerBanner?id=${user.id}`
     : null;
   const avatarUrl = user?.avatar
-    ? `${API_HOST}/obteneravatar?id=${user.id}`
+    ? `${API_HOST}/obtenerAvatar?id=${user.id}`
     : AvatarNoFound;
 
   useEffect(() => {

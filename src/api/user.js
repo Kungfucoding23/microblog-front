@@ -26,7 +26,7 @@ export function getUserApi(id) {
 }
 
 export function uploadBannerApi(file) {
-  const url = `${API_HOST}/subirbanner`;
+  const url = `${API_HOST}/subirBanner`;
 
   const formData = new FormData();
   formData.append("banner", file);
@@ -52,7 +52,7 @@ export function uploadBannerApi(file) {
 }
 
 export function uploadAvatarApi(file) {
-  const url = `${API_HOST}/subiravatar`;
+  const url = `${API_HOST}/subirAvatar`;
 
   const formData = new FormData();
   formData.append("avatar", file);
